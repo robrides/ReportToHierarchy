@@ -1,5 +1,5 @@
 # Report To Hierarchy
-## Looking for assistance
+## ~~Looking for assistance~~ Solved
 
 ### Problem Statement
 
