@@ -17,7 +17,7 @@ Looking for a solution to overcome this issue.
 
 ### Resolution
 
-A resolution to this issue was implemented which adds the following to the method 'readDataAndCreateMap()' starting directly after the opening if statement on line 37:
+A resolution to this issue was implemented which adds the following to the method 'readDataAndCreateMap()' starting directly after the opening `if` statement on line 37:
 
 <code>if (values[0].equals(values[3])) {<br>
 	values[3] = "0";<br>
