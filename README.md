@@ -29,8 +29,8 @@ Also, if you are looking to generate the hierarchy starting at a specific employ
 
 Use:  
 ```java
-buildHierarchyTree(employees.get(1));  
-printHierarchyTree(employees.get(1), 0);  
+buildHierarchyTree(employees.get(id));  
+printHierarchyTree(employees.get(id), 0);  
 ```  
 ...insteatd of:  
 ```java
