@@ -21,8 +21,7 @@ A resolution to this issue was implemented which adds the following to the metho
 
 ```java
 if (values[0].equals(values[3])) {  
-	values[3] = "0";  
-	System.out.println("manager Id modified for emp " + values[0]);  
+	values[3] = "0";   
 }  
 ```
 

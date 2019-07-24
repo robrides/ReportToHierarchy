@@ -34,9 +34,8 @@ public class ReportToHierarchy {
 				String[] values = strLine.split(" ");
 				try {
 					if (values.length > 1) {
-						if (values[0].equals(values[3])) {
+						if (values[0].equals(values[3])) { // This menthod allows this code to execute without issue
 							values[3] = "0";
-							System.out.println("manager Id modified for emp " + values[0]); // This menthod allows this code to execute without issue
 						}
 						employee = new EmployeeNode(values[0], values[1] + " " + values[2], values[3]);
 					}
