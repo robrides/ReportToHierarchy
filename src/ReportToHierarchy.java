@@ -34,13 +34,17 @@ public class ReportToHierarchy {
 				String[] values = strLine.split(" ");
 				try {
 					if (values.length > 1) {
+						if (values[0].equals(values[3])) {
+							values[3] = "0";
+							System.out.println("manager Id modified for emp " + values[0]); // This menthod allows this code to execute without issue
+						}
 						employee = new EmployeeNode(values[0], values[1] + " " + values[2], values[3]);
 					}
 				} catch (Exception e) {
 					employee = new EmployeeNode(values[0], values[1] + " " + values[2], "0");
 				}
 				employees.put(employee.getId(), employee);
-//				if (employee.getReportToId() == employee.getId()) { // Causes stackoverflow
+//				if (employee.getReportToId() == employee.getId()) { // Causes stackoverflow; see solution lines 37 - 40
 				if (employee.getReportToId() == 0) {
 					root = employee;
 				}
