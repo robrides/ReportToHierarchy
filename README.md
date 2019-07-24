@@ -19,10 +19,10 @@ Looking for a solution to overcome this issue.
 
 A resolution to this issue was implemented which adds the following to the method 'readDataAndCreateMap()' starting directly after the opening `if` statement on line 37:
 
-if (values[0].equals(values[3])) {  
+`if (values[0].equals(values[3])) {  
 	values[3] = "0";  
 	System.out.println("manager Id modified for emp " + values[0]);  
-}  
+}  `
 ** **
 Also, if you are looking to generate the hierarchy starting at a specific employee, simply call the buildHierarchyTree method with employees.get(id) where id is the id of the employee with whom to begin building the tree.
 
