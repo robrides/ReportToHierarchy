@@ -25,12 +25,18 @@ if (values[0].equals(values[3])) {
 }  
 ```
 
-Also, if you are looking to generate the hierarchy starting at a specific employee, simply call the buildHierarchyTree method with employees.get(id) where id is the id of the employee with whom to begin building the tree.
+Also, if you are looking to generate the hierarchy starting at a specific employee, simply call the buildHierarchyTree method and the printHierarchyTree with employees.get(id) where id is the id of the employee with whom to begin building the tree.
 
 Use:  
-`buildHierarchyTree(employees.get(id))`  
+		```java
+buildHierarchyTree(employees.get(1));  
+printHierarchyTree(employees.get(1), 0);
+		```  
 ...insteatd of:  
-`buildHierarchyTree(root)`
+```java
+buildHierarchyTree(root);  
+printHierarchyTree(root, 0);  
+```
 
 Hope this helps someone!
 

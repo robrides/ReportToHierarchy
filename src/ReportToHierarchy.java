@@ -15,8 +15,8 @@ public class ReportToHierarchy {
 	public static void main(String[] args) throws IOException {
 		employees = new HashMap<Integer, EmployeeNode>();
 		readDataAndCreateMap();
-		buildHierarchyTree(root);
-		printHierarchyTree(root, 0);
+		buildHierarchyTree(employees.get(1));
+		printHierarchyTree(employees.get(1), 0);
 	}
 
 	private static void readDataAndCreateMap() throws IOException {
